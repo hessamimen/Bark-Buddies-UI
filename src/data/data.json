@@ -1,0 +1,64 @@
+{
+  "dogs": [
+    {
+      "name": "Lucky",
+      "age": 2,
+      "suburb": "Wynyard",
+      "breed": "Maremma",
+      "gender": "Male",
+      "photo": "https://hips.hearstapps.com/hmg-prod/images/shih-tzu-little-dog-royalty-free-image-1652927214.jpg?crop=0.447xw:1.00xh;0.248xw,0&resize=980:*",
+      "temperament": "Protective",
+      "bio": "Lucky is lucky",
+      "owner": "Jane",
+      "email": "test123@gmail.com"
+    },
+    {
+      "name": "Lucky",
+      "age": 2,
+      "suburb": "Wynyard",
+      "breed": "Maremma",
+      "gender": "Male",
+      "photo": "https://hips.hearstapps.com/hmg-prod/images/shih-tzu-little-dog-royalty-free-image-1652927214.jpg?crop=0.447xw:1.00xh;0.248xw,0&resize=980:*",
+      "temperament": "Protective",
+      "bio": "Lucky is lucky",
+      "owner": "Jane",
+      "email": "test123@gmail.com"
+    },
+    {
+      "name": "Lucky",
+      "age": 2,
+      "suburb": "Wynyard",
+      "breed": "Maremma",
+      "gender": "Male",
+      "photo": "https://hips.hearstapps.com/hmg-prod/images/shih-tzu-little-dog-royalty-free-image-1652927214.jpg?crop=0.447xw:1.00xh;0.248xw,0&resize=980:*",
+      "temperament": "Protective",
+      "bio": "Lucky is lucky",
+      "owner": "Jane",
+      "email": "test123@gmail.com"
+    },
+    {
+      "name": "Lucky",
+      "age": 2,
+      "suburb": "Wynyard",
+      "breed": "Maremma",
+      "gender": "Male",
+      "photo": "https://hips.hearstapps.com/hmg-prod/images/shih-tzu-little-dog-royalty-free-image-1652927214.jpg?crop=0.447xw:1.00xh;0.248xw,0&resize=980:*",
+      "temperament": "Protective",
+      "bio": "Lucky is lucky",
+      "owner": "Jane",
+      "email": "test123@gmail.com"
+    },
+    {
+      "name": "Lucky",
+      "age": 2,
+      "suburb": "Wynyard",
+      "breed": "Maremma",
+      "gender": "Male",
+      "photo": "https://hips.hearstapps.com/hmg-prod/images/shih-tzu-little-dog-royalty-free-image-1652927214.jpg?crop=0.447xw:1.00xh;0.248xw,0&resize=980:*",
+      "temperament": "Protective",
+      "bio": "Lucky is lucky",
+      "owner": "Jane",
+      "email": "test123@gmail.com"
+    }
+  ]
+}

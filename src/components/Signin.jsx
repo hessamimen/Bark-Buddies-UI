@@ -47,6 +47,7 @@ const Signin = () => {
           </div>
           <button
             type="submit"
+            onClick={() => navigate("/")}
             className="w-full text-white bg-gray-400  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Login to your account
@@ -54,11 +55,7 @@ const Signin = () => {
           <div className="">
             <p className="text-white">Don't have an account?</p>
 
-            <a
-              href="/"
-              className="text-white hover:underline font-bold"
-              onClick={() => navigate("/")}
-            >
+            <a href="/" className="text-white hover:underline font-bold">
               Sign up here
             </a>
           </div>
