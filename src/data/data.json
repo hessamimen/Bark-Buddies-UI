@@ -60,5 +60,27 @@
       "owner": "Jane",
       "email": "test123@gmail.com"
     }
+  ],
+  "parks": [
+    {
+      "name": "Hyde Park",
+      "photo": "https://media.timeout.com/images/105680638/750/422/image.jpg",
+      "address": "Cenreal business district"
+    },
+    {
+      "name": "Hyde Park",
+      "photo": "https://media.timeout.com/images/105680638/750/422/image.jpg",
+      "address": "Cenreal business district"
+    },
+    {
+      "name": "Hyde Park",
+      "photo": "https://media.timeout.com/images/105680638/750/422/image.jpg",
+      "address": "Cenreal business district"
+    },
+    {
+      "name": "Hyde Park",
+      "photo": "https://media.timeout.com/images/105680638/750/422/image.jpg",
+      "address": "Cenreal business district"
+    }
   ]
 }
