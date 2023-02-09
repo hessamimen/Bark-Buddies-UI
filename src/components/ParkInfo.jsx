@@ -47,12 +47,12 @@ const ParkInfo = () => {
           <p className="text-xs">{park.address}</p>
         </div>
       </div>
-      <div className="rounded-3xl overflow-hidden">
+      <div className="rounded-3xl overflow-hidden mb-2">
         <Map
-          height={350}
+          height={600}
           width={350}
           defaultCenter={[-33.879, 151.1997]}
-          defaultZoom={11}
+          defaultZoom={9}
         >
           <Marker width={50} anchor={[-33.879, 151.1997]} />
         </Map>
