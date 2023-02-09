@@ -19,7 +19,10 @@ const Parks = () => {
   return (
     <div className="flex gap-4 overflow-scroll py-2">
       {parks.map((park) => (
-        <div key={park.address} onClick={() => navigate("/location")}>
+        <div
+          key={park.address}
+          onClick={() => navigate(`/park/${park.id}`, { state: park })}
+        >
           <img
             src={`http://127.0.0.1:8080/${park.photo}`}
             alt="park"

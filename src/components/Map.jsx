@@ -1,6 +1,5 @@
 import React from "react";
 import { Map, Marker } from "pigeon-maps";
-import Searchbar from "./Searchbar";
 
 const MapSection = () => {
   return (

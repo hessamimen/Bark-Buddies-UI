@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import Dogs from "./Dogs";
 import profile from "../assets/profile.png";
 import Searchbar from "./Searchbar";
 import Footer from "./Footer";
-import BsFillArrowLeftSquareFill from "react-icons/bs";
+import { BsFillArrowLeftSquareFill } from "react-icons/bs";
 
 export const DogInfo = () => {
+  const navigate = useNavigate();
   const [dog, setDog] = useState({});
   const params = useParams();
   const id = params.id;
@@ -22,12 +23,20 @@ export const DogInfo = () => {
   }, []);
 
   return (
-    <div className="pt-3 bg-white h-screen gap-4 flex flex-col items-center">
+    <div className="pt-2 bg-white h-screen gap-4 flex flex-col items-center">
       <div className="flex w-screen p-1 items-center justify-between">
-        <div className="w-full">
-          <Searchbar />
+        <div>
+          <BsFillArrowLeftSquareFill
+            size={43}
+            color="#344E41"
+            className="ml-2"
+            onClick={() => navigate("/")}
+          />
         </div>
-        <img src={profile} alt="" className="w-14 h-14" />
+        {/* <div className="w-full">
+          <Searchbar />
+        </div> */}
+        <img src={profile} alt="profile" className="w-14 h-14" />
       </div>
       <div className="rounded-xl overflow-hidden">
         <img
@@ -44,7 +53,7 @@ export const DogInfo = () => {
           {dog.breed}/{dog.temperament}/{dog.age}
         </div>
         <div>
-          <p>{dog.bio}</p>
+          <p className="text-xs">{dog.bio}</p>
         </div>
         <div>
           <button className="bg-[#344E41] text-white py-2 px-10  rounded-2xl mt-5">
@@ -58,7 +67,7 @@ export const DogInfo = () => {
           <Dogs />
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
