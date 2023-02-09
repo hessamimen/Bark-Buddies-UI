@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../../src/assets/logo.png";
+import axios from "axios";
 
 const Signin = () => {
   const navigate = useNavigate();
+  const [signIn, setSignIn] = useState({
+    email: "",
+  });
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+    axios.post("http://127.0.0.1:8080/login", {
+      email: signIn.email,
+    });
+  };
+
+  const changeHandler = (event) => {
+    console.log(event.target.value);
+    setSignIn({
+      ...signIn,
+      [event.target.name]: event.target.value,
+    });
+  };
+
   return (
     <div>
       <div className="w-1/2 mx-auto py-10">
@@ -22,6 +42,7 @@ const Signin = () => {
               type="email"
               name="email"
               id="email"
+              onChange={changeHandler}
               className="bg-transparent border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
               placeholder="name@company.com"
               required
