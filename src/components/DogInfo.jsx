@@ -3,8 +3,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import Dogs from "./Dogs";
 import profile from "../assets/profile.png";
-import Searchbar from "./Searchbar";
-import Footer from "./Footer";
+// import Searchbar from "./Searchbar";
+// import Footer from "./Footer";
 import { BsFillArrowLeftSquareFill } from "react-icons/bs";
 
 export const DogInfo = () => {

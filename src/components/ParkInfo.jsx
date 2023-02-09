@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, useLocation } from "react-router-dom";
 import axios from "axios";
 import { BsFillArrowLeftSquareFill } from "react-icons/bs";
 import profile from "../assets/profile.png";
@@ -7,6 +7,8 @@ import { Map, Marker } from "pigeon-maps";
 
 const ParkInfo = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  console.log(location.state.coords);
   const [park, setPark] = useState({});
   const params = useParams();
   const id = params.id;
@@ -51,10 +53,19 @@ const ParkInfo = () => {
         <Map
           height={600}
           width={350}
-          defaultCenter={[-33.879, 151.1997]}
-          defaultZoom={9}
+          defaultCenter={[
+            location.state.coords.latitude,
+            location.state.coords.longitude,
+          ]}
+          defaultZoom={10}
         >
-          <Marker width={50} anchor={[-33.879, 151.1997]} />
+          <Marker
+            width={50}
+            anchor={[
+              location.state.coords.latitude,
+              location.state.coords.longitude,
+            ]}
+          />
         </Map>
       </div>
     </div>
