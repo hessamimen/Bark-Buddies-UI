@@ -3,7 +3,7 @@ import { Map, Marker } from "pigeon-maps";
 import Searchbar from "./Searchbar";
 
 const MapSection = ({ long, lat }) => {
-  console.log(long, lat);
+  // console.log(long, lat);
   return (
     <div className="">
       <div className="pt-5">

@@ -17,7 +17,7 @@ const Signin = () => {
   };
 
   const changeHandler = (event) => {
-    console.log(event.target.value);
+    // console.log(event.target.value);
     setSignIn({
       ...signIn,
       [event.target.name]: event.target.value,

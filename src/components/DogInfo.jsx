@@ -12,7 +12,6 @@ export const DogInfo = () => {
   const [dog, setDog] = useState({});
   const params = useParams();
   const id = params.id;
-  console.log(id);
   const getDog = async () => {
     const response = await axios.get(`http://127.0.0.1:8080/get_dog/${id}`);
     setDog(response.data);

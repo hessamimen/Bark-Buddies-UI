@@ -8,11 +8,10 @@ import { Map, Marker } from "pigeon-maps";
 const ParkInfo = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  console.log(location.state.coords);
+  // console.log(location.state.coords);
   const [park, setPark] = useState({});
   const params = useParams();
   const id = params.id;
-  console.log(id);
   const getPark = async () => {
     const response = await axios.get(`http://127.0.0.1:8080/get_park/${id}`);
     setPark(response.data);
@@ -57,7 +56,7 @@ const ParkInfo = () => {
             location.state.coords.latitude,
             location.state.coords.longitude,
           ]}
-          defaultZoom={10}
+          defaultZoom={15}
         >
           <Marker
             width={50}

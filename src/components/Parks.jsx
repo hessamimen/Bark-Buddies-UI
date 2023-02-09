@@ -9,7 +9,7 @@ const Parks = () => {
   const getParks = async () => {
     const response = await axios.get("http://127.0.0.1:8080/getallparks");
     setParks(response.data);
-    console.log(parks);
+    // console.log(parks);
   };
 
   useEffect(() => {

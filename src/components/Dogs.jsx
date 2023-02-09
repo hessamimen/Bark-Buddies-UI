@@ -7,7 +7,7 @@ const Dogs = () => {
   const getDogs = async () => {
     const response = await axios.get("http://127.0.0.1:8080/getalldogs");
     setDogs(response.data);
-    console.log(dogs);
+    // console.log(dogs);
   };
   const navigate = useNavigate();
 
