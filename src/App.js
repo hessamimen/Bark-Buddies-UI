@@ -6,6 +6,7 @@ import Searchbar from "./components/Searchbar";
 import Signin from "./components/Signin";
 import Location from "./components/Location";
 import { DogInfo } from "./components/DogInfo";
+import ParkInfo from "./components/ParkInfo";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/map" element={<Map />} />
         <Route path="/location" element={<Location />} />
         <Route path="/dog/:id" element={<DogInfo />} />
+        <Route path="/park/:id" element={<ParkInfo />} />
       </Routes>
       {/* <Searchbar /> */}
       {/* <Map /> */}
